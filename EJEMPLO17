@@ -1,0 +1,10 @@
+.config(function($stateProvider, $urlRouterProvider) {
+$stateProvider
+.state('users', { url: '/users'
+})
+.state('userDetail', { url: '/user/:userId'
+})
+.state('userPost', {
+url: '/user/:userId/:postId'
+});
+})
