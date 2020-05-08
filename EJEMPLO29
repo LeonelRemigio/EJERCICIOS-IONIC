@@ -1,0 +1,8 @@
+<div class="list">   
+   <div class="item item-button-right">   
+   Item with a button on the right that has a clock icon in it
+  <button class="button button-positive"> 
+       <i class="icon ion-clock"></i>    
+  </button>  
+ </div> 
+</div>
