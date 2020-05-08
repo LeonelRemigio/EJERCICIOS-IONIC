@@ -1,0 +1,4 @@
+<ion-header-bar>
+<button class="button icon ion-navicon"></button>
+<h1 class="title">Header Buttons</h1>
+<button class="button">Edit</button>
