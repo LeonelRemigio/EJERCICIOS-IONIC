@@ -1,0 +1,7 @@
+<ion-list>
+<ion-item class="item-divider"> Cabecera
+</ion-item>
+<ion-item>Elemento 1</ion-item>
+<ion-item>Elemento 2</ion-item>
+...
+</ion-list>
