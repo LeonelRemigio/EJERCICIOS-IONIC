@@ -1,0 +1,9 @@
+.factory('superService', function($http) { return {
+getUser: function() {
+return $http.get("url-de-consulta").then(function(response) {
+//...
+return response;
+});
+},
+}
+})
