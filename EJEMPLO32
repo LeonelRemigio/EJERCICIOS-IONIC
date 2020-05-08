@@ -1,0 +1,53 @@
+home.html
+<div class=" canvas sky" >
+<div class=" celestial sun" >
+</div>
+</div>
+
+
+
+home.css
+
+page-home {
+. canvas.sky{ ... }
+. celestial{
+position: fixed; height: 100 px; width: 100 px; left: 40 ;
+top: 10 ;
+background-size: contain;
+background-repeat:
+no-repeat; &. sun{
+background-image: url(../ assets/ landscape/ sun.png);
+}
+}
+}
+
+--------------------------
+. Para hacer esto, vamos a definir un estado dentro de nuestro @component que defina si es de día, o de noche, y haremos que este estado cambie al pulsar sobre nuestro sol. Para esto solo será necesario vincular el evento de click sobre el sol a una función que haga cambiar la variable de estado de nuestro componente:
+
+<div class=" canvas sky" >
+<div class=" celestial sun" ( click)=" toogleState()" >
+</div>
+</div>
+-------------------------
+export class HomePage { state: string = 'day';
+// otras funciones toogleState() {
+this.state = 'day' ==
+this.state ? ' night' : ' day';
+}
+}
+En primer lugar vamos a crear una animación de Angular que haga esto y la añadiremos a nuestro componente. Para hacer esto modificamos el metadata de nuestro componente de la siguiente manera:
+------------------------------------------
+@Component ({
+selector: ' page-home', templateUrl: ' home.html', animations: [
+trigger(' skyState', [ state('day', style ({
+backgroundColor: '#00 BFFF'
+})),
+state(' night',	style ({ backgroundColor: '#131862 '
+})),
+transition('day <= > night', animate('1s')),
+]),
+]
+})
+No nos olvidemos de importar las nuevas clases que vamos a utilizar
+----------------------------
+import { Component , ElementRef , ViewChild , AfterViewInit , trigger , state , style , transition , animate} from '@angular/ core';
