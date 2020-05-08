@@ -1,0 +1,9 @@
+IonicModule.directive('ionList', [ '$timeout', function($timeout) {
+return { restrict: 'E',
+require: ['ionList', '^?$ionicScroll'], controller: '$ionicList',
+compile: function($element, $attr) {
+//... etc ...
+}
+}
+}
+]);
