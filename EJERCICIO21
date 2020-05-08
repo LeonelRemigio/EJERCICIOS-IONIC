@@ -1,5 +1,4 @@
-<ul>
-<li ng-repeat="autor in autores">
-{{autor.nombre}} {{autor.apellidos}}
-</li>
-</ul>
+<div ng-show="mostrarAviso()"> Aviso de ejemplo!
+</div>
+
+
