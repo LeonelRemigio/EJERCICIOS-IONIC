@@ -1,0 +1,32 @@
+<div class=" canvas sky" [ @skyState]=" state" ( pan)=" panEvent(\$event)" >
+<div class=" celestial sun" [ @flyInOut] * ngIf=" state ===
+'day'" ( click)=" toogleState()" ></div>
+<div class=" celestial moon" [ @flyInOut] * ngIf=" state ===
+' night'" ( click)=" toogleState()" ></div>
+<div # landscape [ style.transform]=" currentDeltaX | transform_sanitizer" class= " landscape" >
+<div class=" bird" [@birdState
+]=" state" ></div>
+</div>
+</div>
+--------------------------------------------
+page-home {
+. canvas.sky{ ... }
+. celestial{ ... }
+. landscape {
+// Resto de propiedades.
+. bird {
+position: fixed; height: 100 px; width: 100 px; left: 30 ;
+top: 60 ;
+background-size: 100	100 ;
+background-repeat:
+no-repeat; pointer-events: none;
+}
+}
+}
+--------------------------------------------------
+trigger(' birdState', [ state('day', style ({
+' background-image': 'url(../ assets/ landscape/ bird.png)'
+})),
+state(' night',	style ({
+' background-image': 'url(../ assets/ landscape/ owl.png)'
+})),
