@@ -1,0 +1,9 @@
+<div class="card">
+<div class="item item-divider"> Cabecera de la tarjeta
+</div>
+<div class="item item-text-wrap">
+Este es el bloque de <b>contenido principal</b> de la tarjeta con algún <u>estilo</u> aplicado.
+</div>
+<div class="item item-divider"> Pie de página
+</div>
+</div>
