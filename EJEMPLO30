@@ -1,0 +1,16 @@
+En el controlador de la página de autor declaramos la variable "autor" de tipo objeto con las siguientes propiedades:
+autor: {
+    name: string,
+    email: string,
+    twitter: string,
+    phone: string
+};
+
+Además vamos a aplicar la directiva *ngIf sobre la etiqueta de apertura de la lista (ion-list) para que únicamente se cree si el array contiene algún elemento:
+<ion-list *ngIf="listaTrabajos">
+  <ion-item *ngFor="let trabajo of listaTrabajos">
+    <ion-label class="ion-text-wrap">
+            <!-- TODO: Asignar los datos -->
+    </ion-label>
+  </ion-item>
+</ion-list>
