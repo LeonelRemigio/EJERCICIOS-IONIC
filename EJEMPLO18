@@ -1,0 +1,4 @@
+<ion-view title="About">
+<ion-content>  Contenido de la vista
+</ion-content>
+</ion-view>
