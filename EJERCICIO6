@@ -1,0 +1,9 @@
+<ion-list>
+<ion-item> Elemento 1
+</ion-item>
+<ion-item> Elemento 2
+</ion-item>
+<ion-item>
+...
+</ion-item>
+</ion-list>
