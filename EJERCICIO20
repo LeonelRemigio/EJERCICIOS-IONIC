@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- ... -->
+</head>
+<body ng-app="starter">
+
+<ion-nav-bar class="bar-positive">
+<ion-nav-back-button class="button-clear">
+<i class="ion-chevron-left padding-left"></i>
+</ion-nav-back-button>
+</ion-nav-bar>
+<ion-nav-view></ion-nav-view>
+
+</body>
+</html>
