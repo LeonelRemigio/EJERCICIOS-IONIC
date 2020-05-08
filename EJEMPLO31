@@ -38,5 +38,18 @@ Clear
 </ ion-item >
 </ ion-list >
 </ ion-content >
+-------------------------
+Fuciones
+
+export class HomePage {
+// RESTO DE VARIABLES
+step_list: number [];
+
+// RESTO DE FUNCIONES
+step(): void {
+if ( this.is_running) { this.step_list.push( this.seconds);
+}
+}
+
 
 
