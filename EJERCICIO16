@@ -1,0 +1,13 @@
+.config(function($stateProvider, $urlRouterProvider) {
+
+$stateProvider
+.state('home', { url: '',
+templateUrl: 'templates/home.html', controller: 'homeCtrl'
+})
+.state('page', { url: '/page',
+templateUrl: 'templates/page.html', controller: 'pageCtrl'
+});
+
+// Página por defecto
+$urlRouterProvider.otherwise('');
+})
