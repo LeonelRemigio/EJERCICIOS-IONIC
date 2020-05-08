@@ -1,0 +1,6 @@
+.factory('superService', function() { return {
+getUser: function() {
+var user = { name: "Juan" }; return user;
+},
+}
+})
