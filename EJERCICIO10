@@ -1,8 +1,8 @@
 <ion-list>
-<ion-item class="item-avatar">
-<img src="venkman.jpg">
-<h2>Venkman</h2>
-<p>Back off, man. I'm a scientist.</p>
+<ion-item class="item-thumbnail-left">
+<img src="cover.jpg">
+<h2>Weezer</h2>
+<p>Blue Album</p>
 </ion-item>
 ...
 </ion-list>
