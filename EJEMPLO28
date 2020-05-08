@@ -1,0 +1,8 @@
+<div class="list">
+   <a class="item item-icon-left item-icon-right" href="#">    
+
+       <i class="icon ion-trash-b"></i> 
+       List item with a trashcan icon on the left and a briefcase icon on the right 
+      <i class="icon ion-briefcase"></i>  
+ </a> 
+</div
