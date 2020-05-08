@@ -1,0 +1,11 @@
+<div class="list"> 
+    <a class="item" href="#">  
+       List item  
+ </a> 
+ <div class="item item-divider">   
+     Divider that looks a bit different from items   
+</div>  
+ <a class="item" href="#">   
+  Another list item 
+ </a> 
+</div>
